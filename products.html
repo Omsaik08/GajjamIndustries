@@ -40,33 +40,40 @@
     color: #ff8434 !important;
     border-color:  #ff8434 !important;
   }
-
-  .active{
-    color: white !important;
-    background-color:  #ff8434 !important;
-  }
   .bgcolor{
     background-color: #ff8434 !important;
     border:none;
   }
   .nav-link:hover{
-    color: #ff8434 !important;
+    background-color: #f8ebdb;
+    color: black !important;
+    border-radius: 20px;
+  }
+  .navbar{
+    background-color: #888b9f !important;
   }
   .demo:hover{
     background-color: #ff8434 !important;
     color: white !important;
     border: none;
   }
-  @media only screen and (max-width: 600px) {
+  .nav-modified{
+    background-color: #f8ebdb;
+    color: black !important;
+    border-radius: 20px;
+  }
+  a.nav-link{
+    color:black !important;
+  }
+  @media only screen and (max-width: 700px) {
     .logo {
     width: 10.5em;
     height: 2.5em;
   }
-  .disable-mobile{
-    visibility: hidden;
-    clear: both;
-    display: none;
+  .nav-link{
+    background-color:white !important;
   }
+
 }
 </style>
 <body>
@@ -75,7 +82,7 @@
   <div class="back-to-top"></div>
 
   <header>
-  
+ 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a href="index.html" class="navbar-brand"><img src="assets/img/logo_main.jpg" class="logo"></span></a>
@@ -89,15 +96,19 @@
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
+            &nbsp;
             <li class="nav-item">
-              <a href="index.html#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
+            &nbsp;
+            <li class="nav-item nav-modified">
+              <a href="#products" class="nav-link">Products</a>
+            </li>
+            &nbsp;
             <li class="nav-item">
-              <a href="index.html#products" class="nav-link">Products</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
-            <li class="nav-item">
-              <a href="index.html#contact" class="nav-link">Contact</a>
-            </li>
+            &nbsp;
           </ul>
         </div>
       </div> <!-- .container -->
