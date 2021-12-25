@@ -44,17 +44,33 @@
     border:none;
   }
   .nav-link:hover{
-    color: #ff8434 !important;
+    background-color: #f8ebdb;
+    color: black !important;
+    border-radius: 20px;
+  }
+  .navbar{
+    background-color: #93949d !important;
   }
   .demo:hover{
     background-color: #ff8434 !important;
     color: white !important;
     border: none;
   }
-  @media only screen and (max-width: 600px) {
+  .nav-modified{
+    background-color: #f8ebdb;
+    color: black !important;
+    border-radius: 20px;
+  }
+  a.nav-link{
+    color:black !important;
+  }
+  @media only screen and (max-width: 700px) {
     .logo {
     width: 10.5em;
     height: 2.5em;
+  }
+  .nav-link{
+    background-color:white !important;
   }
 
 }
@@ -76,18 +92,22 @@
 
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
-            <li class="nav-item">
+            <li class="nav-item nav-modified">
               <a href="index.html" class="nav-link">Home</a>
             </li>
+            &nbsp;
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
             </li>
+            &nbsp;
             <li class="nav-item">
               <a href="#products" class="nav-link">Products</a>
             </li>
+            &nbsp;
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
+            &nbsp;
           </ul>
         </div>
       </div> <!-- .container -->
