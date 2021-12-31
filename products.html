@@ -24,13 +24,13 @@
 
 </head>
 <style>
-  html {
+html {
   scroll-behavior: smooth;
 }
   .logo{
     display: inline-block;
     width: 23.5em;
-    height: 3.5em;
+    height: 4.5em;
     vertical-align: middle;
     content: "";
     background: no-repeat center center;
@@ -39,6 +39,9 @@
   .color{
     color: #ff8434 !important;
     border-color:  #ff8434 !important;
+  }
+  .navbar-nav{
+    margin: 0 auto !important;
   }
   .bgcolor{
     background-color: #ff8434 !important;
@@ -49,32 +52,58 @@
     color: black !important;
     border-radius: 20px;
   }
-  .navbar{
-    background-color: #888b9f !important;
-  }
+  
   .demo:hover{
     background-color: #ff8434 !important;
     color: white !important;
     border: none;
   }
+  .top-bar{
+    height: 80px !important;
+    background-color: #33374b;
+    color: #c0c1c7;
+  }
   .nav-modified{
     background-color: #f8ebdb;
     color: black !important;
     border-radius: 20px;
+    /* text-decoration: underline; */
+  }
+  .navbar{
+    min-height: 30px !important;
   }
   a.nav-link{
     color:black !important;
   }
+  .log{
+    padding-left:190px;
+  }
   @media only screen and (max-width: 700px) {
-    .logo {
-    width: 10.5em;
-    height: 2.5em;
+    .logo{
+    display: inline-block;
+    width: 23.5em;
+    height: 4.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+    .log{
+    padding-left:10px;
   }
   .nav-link{
     background-color:white !important;
   }
+  .no{
+    display: none !important;
+  }
 
 }
+  .demo:hover{
+    background-color: #ff8434 !important;
+    color: white !important;
+    border: none;
+  }
 </style>
 <body>
 
@@ -82,11 +111,31 @@
   <div class="back-to-top"></div>
 
   <header>
+
+    <div class="top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="d-inline-block no">
+              <span class="mai-mail"></span> <a href="mailto:gajjamindustries@gmail.com">gajjamindustries@gmail.com</a>
+            </div>
+            <div class="d-inline-block log">
+              <img src="assets/img/logo_main.jpg" class="logo">
+            </div>
+          </div>
+          <div class="col-md-4 text-right d-none d-md-block">
+            <div class="social-mini-button">
+              <a href="https://www.facebook.com/gajjamindustries/" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+              <a href="https://www.linkedin.com/in/gajjam-industries-ab3b12165/" target="_blank"><span class="mai-logo-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .container -->
+    </div>
+ 
  
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a href="index.html" class="navbar-brand"><img src="assets/img/logo_main.jpg" class="logo"></span></a>
-
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
